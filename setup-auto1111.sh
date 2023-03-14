@@ -12,9 +12,5 @@ test -d stable-diffusion-webui || (
 	tar jxvf stable-diffusion-webui.tbz
 )
 
-cd stable-diffusion-webui
-
-echo Launching
-webui.sh --listen --nohalf
-
+echo Done
 

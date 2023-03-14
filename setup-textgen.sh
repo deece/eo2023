@@ -19,6 +19,4 @@ pip install -r requirements.txt
 pip uninstall transformers
 pip install git+https://github.com/zphang/transformers@llama_push
 
-echo Launching
-python server.py --listen
-
+echo Done
