@@ -9,7 +9,7 @@ test -f stable-diffusion-webui.tbz || (
 
 test -d stable-diffusion-webui || (
 	echo Extracting tarball
-	tar jxf stable-diffusion-webui.tbz
+	tar jxvf stable-diffusion-webui.tbz
 )
 
 cd stable-diffusion-webui
