@@ -3,8 +3,7 @@
 # Fetch tarball with models and extract
 test -f text-generation-webui.tar || (
 	echo Downloading tarball
-	pip install gdown
-	gdown 15tgL9BsmYgF6JtFWTXKf6wj3tHg8pBq2
+	wget http://138.44.248.8/text-generation-webui.tar
 )
 
 test -d text-generation-webui || (

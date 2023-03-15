@@ -3,8 +3,7 @@
 # Fetch tarball with models and extract
 test -f stable-diffusion-webui.tar || (
 	echo Downloading tarball
-	pip install gdown
-	gdown 1i1Pzj1kNHxutEJm9O-Cy87XfGDJLpp_h
+	wget http://138.44.248.8/stable-diffusion-webui.tar
 )
 
 test -d stable-diffusion-webui || (
