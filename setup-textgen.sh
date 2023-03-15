@@ -32,6 +32,7 @@ pip install -r requirements.txt
 #pip install -y git+https://github.com/zphang/transformers@llama_push
 
 cd repositories/GPTQ-for-LLaMa
+sudo apt update
 sudo apt install -y pybind11-dev
 rm -rf build
 python setup_cuda.py install --user
