@@ -10,7 +10,7 @@ test -f text-generation-webui.tar || (
 
 test -d text-generation-webui || (
 	echo Extracting tarball
-	tar jxvf text-generation-webui.tar
+	tar xvf text-generation-webui.tar
 )
 
 cd text-generation-webui
