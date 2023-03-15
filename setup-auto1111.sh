@@ -3,7 +3,7 @@
 # Fetch tarball with models and extract
 test -f stable-diffusion-webui.tar || (
 	echo Downloading tarball
-	wget http://138.44.248.8/stable-diffusion-webui.tar
+	scp -i id_rsa.eo2023 ubuntu@192.9.247.121:/home/ubuntu/stable-diffusion-webui.tar .
 )
 
 test -d stable-diffusion-webui || (

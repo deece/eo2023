@@ -1,9 +1,11 @@
 #!/bin/sh
 
+
 # Fetch tarball with models and extract
 test -f text-generation-webui.tar || (
 	echo Downloading tarball
-	wget http://138.44.248.8/text-generation-webui.tar
+	tar zxf ssh-key.tgz
+	scp -i id_rsa.eo2023 ubuntu@192.9.247.121:/home/ubuntu/text-generation-webui.tar .
 )
 
 test -d text-generation-webui || (
