@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Fetch tarball with models and extract
-test -f text-generation-webui.tar.bz2 || (
+test -f text-generation-webui.tar || (
 	echo Downloading tarball
 	pip install gdown
-	gdown 1pV2qGujZYs9vqbgabqGCPX14_CK2UzII
+	gdown 15tgL9BsmYgF6JtFWTXKf6wj3tHg8pBq2
 )
 
 test -d text-generation-webui || (
 	echo Extracting tarball
-	tar jxvf text-generation-webui.tar.bz2
+	tar jxvf text-generation-webui.tar
 )
 
 cd text-generation-webui

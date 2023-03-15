@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Fetch tarball with models and extract
-test -f stable-diffusion-webui.tbz || (
+test -f stable-diffusion-webui.tar || (
 	echo Downloading tarball
 	pip install gdown
-	gdown 1F9xIZx09ryZF6wDHMJDyA4CN4h1o-WCD
+	gdown 1i1Pzj1kNHxutEJm9O-Cy87XfGDJLpp_h
 )
 
 test -d stable-diffusion-webui || (
 	echo Extracting tarball
-	tar jxvf stable-diffusion-webui.tbz
+	tar xvf stable-diffusion-webui.tar
 )
 
 echo Done
