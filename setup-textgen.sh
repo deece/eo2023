@@ -6,7 +6,7 @@ set -xe
 test -f text-generation-webui.tar || (
 	echo Downloading tarball
 	tar zxf ssh-key.tgz
-	scp -i id_rsa.eo2023 ubuntu@192.9.247.121:/home/ubuntu/text-generation-webui.tar .
+	scp -i id_rsa.eo2023 ubuntu@192.9.132.254:/home/ubuntu/text-generation-webui.tar .
 )
 
 test -d text-generation-webui || (
