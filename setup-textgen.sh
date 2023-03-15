@@ -37,8 +37,8 @@ sudo apt install -y pybind11-dev
 rm -rf build
 python setup_cuda.py install --user
 
-sed -i s/LLaMAConfig/LlamaConfig/g /home/deece/eo2023/text-generation-webui/repositories/GPTQ-for-LLaMa/llama.py
-sed -i s/LLaMAForCausalLM/LlamaForCausalLM/g /home/deece/eo2023/text-generation-webui/repositories/GPTQ-for-LLaMa/llama.py
-sed -i s/LLaMATokenizer/LlamaTokenizer/g /home/deece/eo2023/text-generation-webui/models/llama-30b/tokenizer_config.json
+sed -i s/LLaMAConfig/LlamaConfig/g ~/eo2023/text-generation-webui/repositories/GPTQ-for-LLaMa/llama.py
+sed -i s/LLaMAForCausalLM/LlamaForCausalLM/g ~/eo2023/text-generation-webui/repositories/GPTQ-for-LLaMa/llama.py
+sed -i s/LLaMATokenizer/LlamaTokenizer/g ~/eo2023/text-generation-webui/models/llama-30b/tokenizer_config.json
 
 echo Done
